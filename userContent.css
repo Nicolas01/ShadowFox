@@ -739,6 +739,21 @@ url-prefix(https://discovery.addons.mozilla.org) {
     color: var(--in-content-link-color)!important
   }
 }
+html#feedHandler body {
+  background-color: var(--in-content-page-background)!important
+}
+html#feedHandler body div#feedBody,
+html#feedHandler body div#feedHeaderContainer div#feedHeader.feedBackground {
+  background-color: var(--in-content-box-background)!important;
+  border-color: var(--in-content-box-border-color)!important;
+  color: var(--in-content-page-color)!important
+}
+html#feedHandler body div#feedBody :link {
+  color: var(--in-content-link-color)!important
+}
+html#feedHandler body div#feedBody div#feedTitle div#feedTitleContainer h1#feedTitleText {
+  border-color: var(--in-content-box-border-color)!important
+}
 @-moz-document regexp("^moz-extension://.*manifest.json$") {
   html {
     background: var(--in-content-page-background)!important;
@@ -1996,27 +2011,5 @@ url-prefix(https://discovery.addons.mozilla.org) {
   ::-moz-selection {
     color: var(--grey-30);
     background: var(--accent-2)
-  }
-}
-@-moz-document regexp("^(file:///).*[^(.html)]$") {
-  :root {
-    background-color: var(--mid-way-color)!important
-  }
-  body {
-    border: 1px solid!important;
-    background-color: var(--primary-dark-color)!important;
-    color: var(--primary-light-color)!important
-  }
-  h1 {
-    border-bottom: 1px solid!important
-  }
-  body > table > tbody > tr:hover {
-    outline: solid 1px!important
-  }
-  .dir,
-  .file,
-  .symlink,
-  .up {
-    color: var(--primary-accent-color)!important
   }
 }

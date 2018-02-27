@@ -739,6 +739,21 @@ url-prefix(https://discovery.addons.mozilla.org) {
     color: var(--in-content-link-color)!important
   }
 }
+html#feedHandler body {
+  background-color: var(--in-content-page-background)!important
+}
+html#feedHandler body div#feedBody,
+html#feedHandler body div#feedHeaderContainer div#feedHeader.feedBackground {
+  background-color: var(--in-content-box-background)!important;
+  border-color: var(--in-content-box-border-color)!important;
+  color: var(--in-content-page-color)!important
+}
+html#feedHandler body div#feedBody :link {
+  color: var(--in-content-link-color)!important
+}
+html#feedHandler body div#feedBody div#feedTitle div#feedTitleContainer h1#feedTitleText {
+  border-color: var(--in-content-box-border-color)!important
+}
 @-moz-document regexp("^moz-extension://.*manifest.json$") {
   html {
     background: var(--in-content-page-background)!important;
