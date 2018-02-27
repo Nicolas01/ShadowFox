@@ -1,0 +1,5 @@
+#content,
+browser[type=content-primary],
+browser[type=content] > html {
+  background: var(--in-content-page-background)!important
+}
