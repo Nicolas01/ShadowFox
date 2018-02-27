@@ -1,67 +1,54 @@
-/* Copyright (c) 2017 overdodactyl
-   Available for use under the MIT License:
-   https://opensource.org/licenses/MIT
-   https://github.com/overdodactyl/ShadowFox  */
-
- /* Place the contents of this file in the custom rules section  */
-
 #sidebar {
-    background-color: var(--grey-60) !important;
+  background-color: var(--grey-60)!important
 }
+#main-message,
+#view-list > tree-item > .title,
+#view-title-label,
 .content,
 .day-header,
 .headline-feed-name,
 .headline-title,
-tree-item > .title,
-#view-title-label,
-#main-message,
 .sidebar-button,
-#view-list > tree-item > .title {
-    color: var(--primary-light-color) !important;
-
+tree-item > .title {
+  color: var(--primary-light-color)!important
 }
 #sidebar-top {
-    border-bottom: 1px solid var(--grey-80) !important;
+  border-bottom: 1px solid!important
 }
-
 .sidebar-button:hover {
-    color: var(--primary-accent-color) !important;
+  color: var(--primary-accent-color)!important
 }
-
-tree-item.selected, tree-folder.selected > tree-folder-header {
-    border-color: var(--primary-accent-color) !important;
-    background-color: var(--primary-accent-color) !important;
+tree-folder.selected > tree-folder-header,
+tree-item.selected {
+  border-color: var(--primary-accent-color)!important;
+  background-color: var(--primary-accent-color)!important
 }
-tree-item:hover:not(.selected), tree-folder:not(.selected) > tree-folder-header:hover {
-    background-color: var(--grey-70) !important;
-}
-
 #feed-view-header {
-  background: var(--grey-80) !important;
+  background: var(--grey-80)!important
 }
-
-#sidebar-splitter, #tag-list-splitter {
-    border-left: 3px solid var(--grey-80) !important;
-    border-right: 1px solid var(--grey-80)!important;
-    border-right-color: var(--grey-80)
+#sidebar-splitter,
+#tag-list-splitter {
+  border-left: 3px solid!important;
+  border-right: 1px solid!important;
+  border-right-color: var(--grey-80)
 }
-#sidebar-splitter:hover, #tag-list-splitter:hover {
-    border-right-color: var(--primary-accent-color) !important;
+#sidebar-splitter:hover,
+#tag-list-splitter:hover {
+  border-right-color: var(--primary-accent-color)!important
 }
 .full-container-inner {
-  background: none !important;
+  background: 0 0!important
 }
-
 .headline-container:hover > .headline-header {
-    background-color: var(--grey-80) !important;
+  background-color: var(--grey-80)!important
 }
-
-tree-item:hover:not(.selected),
-tree-folder:not(.selected) > tree-folder-header:hover {
-    border-color: var(--grey-80) !important;
+tree-folder:not(.selected) > tree-folder-header:hover,
+tree-item:hover:not(.selected) {
+  background-color: var(--grey-70)!important;
+  border-color: var(--grey-80)!important
 }
+#view-list > tree-item.selected > .title,
 .unread-count,
-tree-item.selected > .title,
-#view-list > tree-item.selected > .title {
-  color: white !important;
+tree-item.selected > .title {
+  color: #fff!important
 }
