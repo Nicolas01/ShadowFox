@@ -65,3 +65,14 @@ listitem[selected=true] {
   border-color: var(--in-content-box-border-color)!important;
   box-shadow: none!important
 }
+@-moz-document url(chrome://browser/content/places/bookmarkProperties2.xul) {
+  dialog#bookmarkproperties {
+    -moz-appearance: none !important;
+    background-color: var(--in-content-page-background) !important;
+    color: var(--in-content-page-color) !important;
+  }
+  #editBMPanel_folderRow hbox button#editBMPanel_foldersExpander.expander-down,
+  #editBMPanel_folderRow hbox button#editBMPanel_foldersExpander.expander-up{
+    -moz-appearance: -moz-mac-disclosure-button-closed !important;
+  }
+}
